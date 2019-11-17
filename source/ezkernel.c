@@ -306,6 +306,9 @@ void Show_ICON_filename(u32 show_offset,u32 file_select,u32 haveThumbnail)
 		else if(!strcasecmp(&(pfilename[strlen8-4]), "ngpc")) { //Neo Geo Pocket Color
             icon = (u16*)(gImage_icon_NG);
         }
+		else if(!strcasecmp(&(pfilename[strlen8-3]), "ngc")) { //Neo Geo Pocket Color
+            icon = (u16*)(gImage_icon_NG);
+        }
 		else if(!strcasecmp(&(pfilename[strlen8-3]), "jpg")) { //JPEG Image
             icon = (u16*)(gImage_icon_IMG);
         }
@@ -1248,7 +1251,7 @@ void CheckLanguage(void)
     if(gl_select_lang == 0xE1E1) { //english
         LoadEnglish();
     }
-    else { //÷–Œƒ
+    else { //√ñ√ê√é√Ñ
         LoadChinese();
     }
 }
